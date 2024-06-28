@@ -3,13 +3,13 @@ My own personal dev env setup
 
 ## TODO
 
-- learn TMUX
-- install env in QEMU using vagrant
-- investigate x86 versus arm
-- connect with TMUX
-- create vim env
-- install tools - AWS etc
-- figure out live refresh on right pane for text etc
+- [] learn TMUX
+- [] install env in QEMU using vagrant
+- [] investigate x86 versus arm
+- [] connect with TMUX
+- [] create vim env
+- [] install tools - AWS etc
+- [] figure out live refresh on right pane for text etc
 
 ## Viewing MD Files
 
