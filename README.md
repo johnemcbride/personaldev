@@ -25,6 +25,7 @@ mdless README.me
 |:setlocal foldmethod=manual | Enables manual folding |
 | zf | Create fold |
 | zd | Delete fold |
+| zo | Open fold |
 
 
 ## TMUX Cheatsheet
@@ -44,4 +45,18 @@ mdless README.me
 |Ctrl + b <SPACE> | Toggle Pane Horiz/Vert |
 
 
+## Vagrant Env
+
+Install vagrant:
+```
+brew install vagrant qemu
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-qemu
+```
+Use vagrant file in this repo...
+
+```
+vagrant up
+vagrant ssh
+```
 
