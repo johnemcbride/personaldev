@@ -10,6 +10,11 @@ My own personal dev env setup
 - [ ] install tools - AWS etc
 - [ ] figure out live refresh on right pane for text etc
 
+## Kill Stuff On A Port
+
+kill -9 $(lsof -ti:xxxx) 
+
+
 ## Viewing MD Files
 
 To view MD Files
