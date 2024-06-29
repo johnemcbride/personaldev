@@ -56,5 +56,10 @@ Vagrant.configure("2") do |config|
 
     # Reload the shell to apply changes
     exec $SHELL
+    sudo apt install zsh -y
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+    sudo chsh -s $(which zsh) $(whoami)
+
+
 SHELL
 end
