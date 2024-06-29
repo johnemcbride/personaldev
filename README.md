@@ -60,3 +60,8 @@ vagrant up
 vagrant ssh
 ```
 
+## Git Tricks
+
+|Command | Does |
+|---|---|
+|git log --follow -p -- <File> | Shows history for that file |
