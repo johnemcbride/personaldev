@@ -38,12 +38,6 @@ Vagrant.configure("2") do |config|
     # Install pyenv
     curl https://pyenv.run | bash
 
-    # Add pyenv to the shell
-    echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
-    echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
-    echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-    echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
-    source ~/.bashrc
 
     # Install pip and pipenv
     sudo apt install pipenv -y
@@ -62,6 +56,12 @@ Vagrant.configure("2") do |config|
     sudo chsh -s $(which zsh) $(whoami)
     inoremap 
     git clone https://github.com/johnemcbride/personaldev
+    
+    # Add pyenv to the shell
+    echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> $ZSH_CUSTOM/path.zsh 
+    echo 'eval "$(pyenv init --path)"' >> $ZSH_CUSTOM/path.zsh 
+    echo 'eval "$(pyenv init -)"' >> $ZSH_CUSTOM/path.zsh 
+    echo 'eval "$(pyenv virtualenv-init -)"' >> $ZSH_CUSTOM/path.zsh 
     cp personaldev ~/.vimrc
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
