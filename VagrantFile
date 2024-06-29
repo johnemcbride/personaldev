@@ -25,6 +25,7 @@ Vagrant.configure("2") do |config|
       libsqlite3-dev \
       wget \
       curl \
+      tree \
       llvm \
       libncurses5-dev \
       libncursesw5-dev \
