@@ -59,7 +59,8 @@ Vagrant.configure("2") do |config|
     sudo apt install zsh -y
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     sudo chsh -s $(which zsh) $(whoami)
-
-
+    inoremap 
+    git clone https://github.com/johnemcbride/personaldev
+    cp personaldev ~/.vimrc
 SHELL
 end
